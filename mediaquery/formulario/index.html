@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- atributo action -->
+    <h1>Formulário</h1>
+    <form action="registro.php" method="GET">
+        <div>
+            <label for="">nome</label>
+            <input type="text">
+        </div>
+        <!-- atributo name -->
+
+        <div>
+            <label for="">idade:</label>
+            <input type="text" name="age">
+        </div>
+
+        <!-- atributo label -->
+
+        <div><label for="age">idade</label>
+            <input type="text" name="age">
+        </div>
+        <!-- limpando / resetando o formulario -->
+        <input type="reset" value="limpar">
+        <!-- Submit botão -->
+
+        <input type="submit" value="Enviar">
+
+        <!-- select -->
+
+        <div>
+            <label for="cidade">selecione sua cidade</label>
+            <select name="cidade" id="">
+                <option value="São paulo">São paulo</option>
+                <option value="Taboão da serra">Taboão da serra</option>
+                <option value="Osasco">Osasco</option>
+            </select>
+        </div>
+
+        <!-- selected -->
+        <div>
+            <label for="selecao">Quem vai ganhar a Próxima copa do mundo</label>
+
+            <select name="times">
+                <option value="Argetin">Argetina</option>
+                <option value="franca" selected>Franca</option>
+                <option value="Alemanha">Alemanha</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Holanda">Holanda</option>
+            </select>
+        </div>
+
+        <!-- seleção de varios select -->
+
+        <div>
+            <label for="acessorios">selecione os acessórios do seu computador</label>
+            <select name="acessorios" multiple>
+                <option value="mouse">mouse</option>
+                <option value="teclado">teclado</option>
+                <option value="fone-de-ouvido">fone-de-ouvido</option>
+                <option value="monitor">monitor</option>
+                <option value="webcan">webcan</option>
+            </select>
+        </div>
+
+        <!-- textarea -->
+
+        <div>
+            <label for="feedback">descreva seu feedback sobre nosso site</label>
+
+            <textarea name="feedback"></textarea>
+
+
+        </div>
+
+        <!-- Fildset -->
+        <div>
+            <fieldset>
+                <legend>insira seu endereço</legend>
+                <label for="rua">rua</label>
+                <input type="text" name="rua">
+                <label for="bairro">bairro</label>
+                <input type="text" name="bairro">
+            </fieldset>
+        </div>
+
+        <!-- datalist -->
+
+        <div>
+            <label for="livro">selecione seu livro</label>
+            <input type="text" list="livro" name="livro">
+            <datalist id="livro">
+
+                <option value="crespusculo">crespusculo</option>
+                <option value="harry potter e o calicce de fogo">harry potter e o calicw de fogo</option>
+                <option value="a hospedeira">a hospedeira</option>
+                <option value="o simbolo perdido">o simbolo perdido</option>
+
+            </datalist>
+        </div>
+
+        <!-- password / senha -->
+
+        <div>
+            <label for="senha">senha</label>
+            <input type="password" name="senha">
+        </div>
+
+        <!-- input radio -->
+
+        <div>
+            <label for="genero"> qual o seu gênero</label>
+            <div class="radio">
+                <input type="radio" value="feminino" name="genero">
+                <label for="femino">femino</label>
+            </div>
+
+            <div class="radio">
+                <input type="radio" value="masculino" name="genero">
+                <label for="masculino">masculino</label>
+            </div>
+
+            <div class="radio">
+                <input type="radio" value="nãoBinario" name="genero">
+                <label for="nãoBinario">nãoBinario</label>
+            </div>
+
+        </div>
+
+        <!-- checkbox -->
+
+        <div class="radio">
+
+
+            <input type="checkbox" name="linguasestrageiras" value="ingles">
+            <label for="ingles">ingles</label>
+
+        </div>
+
+        <div class="radio">
+
+            <input type="checkbox" name="linguasestrageiras" value="spanhol">
+            <label for="espanhol">espanhol</label>
+
+        </div>
+        <div class="radio">
+
+            <input type="checkbox" name="linguasestrageiras" value="alemão">
+            <label for="alemão">alemão</label>
+
+        </div>
+
+
+        </div>
+        <div>
+            <label for="datadenascimento">data de nascimento</label>
+            <input type="date" name="datadenascimento" id="">
+        </div>
+
+        <div>
+            <label for="arquivo">insira seu curriculo</label>
+            <input type="file" name="arquivo">
+        </div>
+
+        <!-- input  number -->
+
+        <div>
+            <label for="certificados">quantos certificados você possui</label>
+            <input type="number" name="certificados">
+        </div>
+
+        <!-- input email -->
+
+        <div>
+            <label for="digiteseuemail">digite seu email</label>
+            <input type="email" name="digiteseuemail">
+        </div>
+
+        <!-- atributo value -->
+
+        <div>
+            <label for="confirmaaula">você assitiu a video aula da empresa</label>
+            <input type="text" value="confirmo que assisti a aula " name="confirmaaula">
+        </div>
+
+     <!-- disabled -->
+
+     <div>
+        <p>informe seu rg</p>
+
+        <input type="text" value="não precisa preencher esse campo" disabled>
+     </div>
+                   
+     <!-- placeholder -->
+
+     <div>
+        <label for="pesquisa">como achou o nosso site</label>
+        <input type="text" name="pesquisa" placeholder="no google ou instagram">
+    </div>
+
+     <!-- atributo required -->
+
+     <div>
+        <label for="sobrenome">digite sue sobrenome completo</label>
+        <input type="text" name="sobrenone" value="digite seu sobrenome" required>
+    </div>
+
+    </form>
+</body>
+
+</html>
